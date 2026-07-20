@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check-In Online</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/etiquetas.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/check-in.css">
+</head>
+
+<body>
+  <header id="header"></header>
+
+
+  <main>
+    <h1>Check-In Online</h1>
+    <p>Complete su check-in rápido y sencillo</p>
+
+    <section class="formulario-checkin">
+      <form>
+        <fieldset>
+          <legend class="titulo">Datos del vuelo</legend>
+          <label>Código de reserva:</label>
+          <input type="text" name="codigo" required>
+          <button class="buscar-reserva">Buscar reserva</button>
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend class="titulo">Datos del pasajero</legend>
+          <label>Apellido:</label>
+          <input type="text" name="apellido" required>
+          <label>Nombre:</label>
+          <input type="text" name="nombre" required>
+        </fieldset>
+        <fieldset>
+          <label>Documento / Pasaporte:</label>
+          <input type="text" name="documento" required>
+        </fieldset>
+        <fieldset>
+          <p>Opciones adicionales</p>
+          <label><input type="checkbox"> Equipaje extra</label>
+          <label><input type="checkbox"> Comida especial</label>
+          <label><input type="checkbox"> Asistencia</label>
+        </fieldset>
+
+        <div class="botones">
+          <button class="confirmar">Confirmar Check-In</button>
+          <button class="cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+  <script src="../JS/header-footer.js"></script>
+  <script src="../JS/script.js"></script>
+</body>
+
+</html>

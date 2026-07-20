@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrícula de Países</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <input type="text" id="filtro" placeholder="Buscar país...">
+    </header>
+
+    <main>
+        <div id="grid" class="grid"></div>
+    </main>
+
+    <!-- Popup -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="cerrar">&times;</span>
+            <h2 id="popup-nombre"></h2>
+            <img id="popup-bandera" alt="Bandera">
+            <p id="popup-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
