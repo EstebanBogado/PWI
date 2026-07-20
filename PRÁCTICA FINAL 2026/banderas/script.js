@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+    renderGrid(paises);
+});
 const paises = [
     { nombre: "Argentina", bandera: "https://flagcdn.com/ar.svg", info: "País en Sudamérica." },
     { nombre: "Brasil", bandera: "https://flagcdn.com/br.svg", info: "País en Sudamérica." },
@@ -48,6 +51,3 @@ filtro.addEventListener("input", () => {
     const filtrados = paises.filter(p => p.nombre.toLowerCase().includes(texto));
     renderGrid(filtrados);
 });
-
-// Inicializar
-renderGrid(paises);

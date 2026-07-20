@@ -1,0 +1,22 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.25em;
+    border-radius: 0.625em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    max-width: 25em;
+    margin: 3em auto;
+    gap: 1em;
+}
