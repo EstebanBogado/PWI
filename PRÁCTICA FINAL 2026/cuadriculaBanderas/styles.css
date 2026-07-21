@@ -10,12 +10,14 @@ body {
     margin: 2em;
 }
 
-.busqueda, input {
+.filtro,
+input {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3em;
     margin-bottom: 1em;
+
     input {
         width: 60%;
         padding: 0.5em;
@@ -25,11 +27,49 @@ body {
     }
 }
 
-.cuadricula, td, tr {
+.cuadricula,
+td,
+tr {
+    width: 100%;
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
     gap: 1em;
     padding: 1em;
     border: 1px solid #ccc;
+
+    td {
+        width: 12em;
+    }
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celda-banderas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h5 {
+        margin-top: 0.5em;
+        font-size: 0.9em;
+        color: #333;
+        text-align: center;
+    }
+
+}
+
+img {
+    height: 5em;
+    width: 8em;
 }
