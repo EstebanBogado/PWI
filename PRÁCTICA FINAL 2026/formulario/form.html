@@ -10,16 +10,19 @@
 
 <body>
     <div>
-        <form action="" id="formulario">
+        <form action="" id="formulario" autoComplete="off">
             <label for="" id="">usuario</label>
             <input type="text" name="user" id="user">
+            <p id="mensajeDeError" hidden></p>
             <label for="" id="">contraseña</label>
             <input type="password" name="pass" id="pass">
+            <p id="errorPass" hidden></p>
             <label for="" id="">repetir contraseña</label>
             <input type="password" name="confirmPass" id="confirmPass">
+            <p id="errorConfirmPass" hidden></p>
             <button type="submit" id="registrar">Registrar</button>
             <button type="reset">Cancelar</button>
-            <p id="mensajeDeError" hidden></p>
+            <!-- <p id="mensajeDeError" hidden></p> -->
         </form>
     </div>
     <script src="script.js"></script>
