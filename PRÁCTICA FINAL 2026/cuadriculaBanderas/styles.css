@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 2em;
+}
+
+.busqueda, input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    margin-bottom: 1em;
+    input {
+        width: 60%;
+        padding: 0.5em;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
+
+.cuadricula, td, tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
