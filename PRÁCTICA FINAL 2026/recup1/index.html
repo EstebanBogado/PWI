@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PRÁCTICA 1</h1>
+    </header>
+    <main>
+        <article id="tituloCurso">
+            <p>Titulo del Curso</p>
+        </article>
+        <article>
+            <div>
+                <label for="curso">Seleccione un curso:</label>
+                <div class="radio-cursos" id="curso">
+                    <input type="radio" name="curso" id="html" value="html">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="curso" id="css" value="css">
+                    <label for="css">CSS</label>
+                    <input type="radio" name="curso" id="js" value="js">
+                    <label for="js">JS</label>
+                </div>
+            </div>
+            <div>
+                <label for="color">Cambiar el color del texto:</label>
+                <div for="color-textos" id="">
+                    <select name="color" id="colorTexto">
+                        <option value="">Seleccione un color</option>
+                        <option value="red">Rojo</option>
+                        <option value="green">Verde</option>
+                        <option value="yellow">Amarillo</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="fondo">Cambiar el color del fondo:</label>
+                <div class="radio-colores" id="colorFondo">
+                    <input type="radio" name="fondo" id="fondo" value="green">
+                    <label for="fondo">Verde</label>
+                    <input type="radio" name="fondo" id="fondo" value="violet">
+                    <label for="fondo">Violeta</label>
+                    <input type="radio" name="fondo" id="fondo" value="orange">
+                    <label for="fondo">Naranja</label>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <h5>&copy; 2026 Recuperatorio 1. All rights reserved.</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
