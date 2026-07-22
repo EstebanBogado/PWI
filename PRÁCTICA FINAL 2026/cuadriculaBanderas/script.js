@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         { nombre: "Noruega", bandera: "https://flagcdn.com/no.svg", info: "País en Europa." },
         { nombre: "Suecia", bandera: "https://flagcdn.com/se.svg", info: "País en Europa." },
         { nombre: "Finlandia", bandera: "https://flagcdn.com/fi.svg", info: "País en Europa." },
-        { nombre: "Polonia", bandera: "https://flagcdn.com/pl.svg", info: "País en Europa." },
-        { nombre: "Portugal", bandera: "https://flagcdn.com/pt.svg", info: "País en Europa." },
+        { nombre: "Dinamarca", bandera: "https://flagcdn.com/dk.svg", info: "País en Europa." },
+        { nombre: "Islandia", bandera: "https://flagcdn.com/is.svg", info: "País en Europa." },
         { nombre: "Suiza", bandera: "https://flagcdn.com/ch.svg", info: "País en Europa." }
     ];
     function crearTabla(m, n, datos) {
