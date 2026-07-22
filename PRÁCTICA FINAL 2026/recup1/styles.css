@@ -65,6 +65,12 @@ div {
     margin: 1em;
 }
 
+.radios {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
 .radio-cursos,
 .radio-colores {
     display: flex;
