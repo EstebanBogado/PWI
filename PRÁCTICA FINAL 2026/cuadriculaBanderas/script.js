@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     const paises = [
         { nombre: "Argentina", bandera: "https://flagcdn.com/ar.svg", info: "País en Sudamérica." },
         { nombre: "Brasil", bandera: "https://flagcdn.com/br.svg", info: "País en Sudamérica." },

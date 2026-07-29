@@ -27,6 +27,11 @@ input {
     }
 }
 
+.tabla-banderas {
+    background-color: rgb(233, 228, 228);
+    border-style: solid, black;
+}
+
 .cuadricula,
 td,
 tr {
@@ -36,7 +41,7 @@ tr {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 1px;
 
     td {
         width: 12em;
