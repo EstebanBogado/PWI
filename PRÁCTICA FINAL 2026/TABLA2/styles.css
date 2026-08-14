@@ -1,0 +1,19 @@
+.formatoTabla {
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    align-items: left;
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+td {
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
