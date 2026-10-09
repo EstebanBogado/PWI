@@ -14,6 +14,19 @@ const paises = [
     { nombre: "Canadá", bandera: "https://flagcdn.com/ca.svg", info: "País en América del Norte." },
     { nombre: "Algeria", bandera: "https://flagcdn.com/dz.svg", info: "País en África." },
     { nombre: "Australia", bandera: "https://flagcdn.com/au.svg", info: "País en Oceanía." },
+    { nombre: "México", bandera: "https://flagcdn.com/mx.svg", info: "País en América del Norte." },
+    { nombre: "Rusia", bandera: "https://flagcdn.com/ru.svg", info: "País en Europa y Asia." },
+    { nombre: "Sudáfrica", bandera: "https://flagcdn.com/za.svg", info: "País en África." },
+    { nombre: "China", bandera: "https://flagcdn.com/cn.svg", info: "País en Asia." },
+    { nombre: "Corea del Sur", bandera: "https://flagcdn.com/kr.svg", info: "País en Asia." },
+    { nombre: "Noruega", bandera: "https://flagcdn.com/no.svg", info: "País en Europa." },
+    { nombre: "Suecia", bandera: "https://flagcdn.com/se.svg", info: "País en Europa." },
+    { nombre: "Finlandia", bandera: "https://flagcdn.com/fi.svg", info: "País en Europa." },
+    { nombre: "Grecia", bandera: "https://flagcdn.com/gr.svg", info: "País en Europa." },
+    { nombre: "Turquía", bandera: "https://flagcdn.com/tr.svg", info: "País en Europa y Asia." },
+    { nombre: "Egipto", bandera: "https://flagcdn.com/eg.svg", info: "País en África." },
+    { nombre: "Tailandia", bandera: "https://flagcdn.com/th.svg", info: "País en Asia." },
+    { nombre: "Vietnam", bandera: "https://flagcdn.com/vn.svg", info: "País en Asia." },
 ];
 
 const grid = document.getElementById("grid");
