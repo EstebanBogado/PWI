@@ -5,26 +5,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const oponente = ["piedra", "papel", "tijera"];
 
     jugar.addEventListener('click', function () {
+        const titulo = document.createElement('h2');
         const nuevoParrafo = document.createElement('p');
-        const eleccionUsuario = eleccion.value;
-        const eleccionOponente = oponente[Math.floor(Math.random() * oponente.length)];
-        if (eleccionUsuario === eleccionOponente) {
-            document.getElementById("resultado").textContent = `Empate! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
+        const jugador1 = eleccion.value;
+        const jugador2 = oponente[Math.floor(Math.random() * oponente.length)];
+
+        if (jugador1 === jugador2) {
+            titulo.textContent = `Empate! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
             nuevoParrafo.textContent = `mmm...`;
             nuevoParrafo.classList.add('amarillo');
-            document.getElementById("resultado").appendChild(nuevoParrafo);
-        } else if ((eleccionUsuario === "piedra" && eleccionOponente === "tijera") ||
-            (eleccionUsuario === "papel" && eleccionOponente === "piedra") ||
-            (eleccionUsuario === "tijera" && eleccionOponente === "papel")) {
-            document.getElementById("resultado").textContent = `Ganaste! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
+        } else if ((jugador1 === "piedra" && jugador2 === "tijera") ||
+            (jugador1 === "papel" && jugador2 === "piedra") ||
+            (jugador1 === "tijera" && jugador2 === "papel")) {
+            titulo.textContent = `Ganaste! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
             nuevoParrafo.textContent = `joya`;
             nuevoParrafo.classList.add('verde');
-            document.getElementById("resultado").appendChild(nuevoParrafo);
         } else {
-            document.getElementById("resultado").textContent = `Perdiste! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
+            titulo.textContent = `Perdiste! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
             nuevoParrafo.textContent = `ufa...`;
             nuevoParrafo.classList.add('rojo');
-            document.getElementById("resultado").appendChild(nuevoParrafo);
         }
+
+        resultado.innerHTML = "";
+        resultado.appendChild(titulo);
+        resultado.appendChild(nuevoParrafo);
     });
 });      

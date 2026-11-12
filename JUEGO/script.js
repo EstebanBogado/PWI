@@ -6,25 +6,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     jugar.addEventListener('click', function () {
         const nuevoParrafo = document.createElement('p');
-        const eleccionUsuario = eleccion.value;
-        const eleccionOponente = oponente[Math.floor(Math.random() * oponente.length)];
-        if (eleccionUsuario === eleccionOponente) {
-            document.getElementById("result").textContent = `Empate! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
+        const jugador1 = eleccion.value;
+        const jugador2 = oponente[Math.floor(Math.random() * oponente.length)];
+        if (jugador1 === jugador2) {
+            document.getElementById("result").textContent = `Empate! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
             nuevoParrafo.textContent = `mmm...`;
             nuevoParrafo.classList.add('amarillo');
             document.getElementById("result").appendChild(nuevoParrafo);
-        } else if ((eleccionUsuario === "piedra" && eleccionOponente === "tijera") ||
-            (eleccionUsuario === "papel" && eleccionOponente === "piedra") ||
-            (eleccionUsuario === "tijera" && eleccionOponente === "papel")) {
-            document.getElementById("result").textContent = `Ganaste! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
-            nuevoParrafo.textContent = `joya`;
-            nuevoParrafo.classList.add('verde');
-            document.getElementById("result").appendChild(nuevoParrafo);
         } else {
-            document.getElementById("result").textContent = `Perdiste! Elegiste ${eleccionUsuario} y el oponente eligió ${eleccionOponente}`;
-            nuevoParrafo.textContent = `ufa...`;
-            nuevoParrafo.classList.add('rojo');
-            document.getElementById("result").appendChild(nuevoParrafo);
+            if ((jugador1 === "piedra" && jugador2 === "tijera") ||
+                (jugador1 === "papel" && jugador2 === "piedra") ||
+                (jugador1 === "tijera" && jugador2 === "papel")) {
+                document.getElementById("result").textContent = `Ganaste! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
+                nuevoParrafo.textContent = `joya`;
+                nuevoParrafo.classList.add('verde');
+                document.getElementById("result").appendChild(nuevoParrafo);
+            } else {
+                document.getElementById("result").textContent = `Perdiste! Elegiste ${jugador1} y el oponente eligió ${jugador2}`;
+                nuevoParrafo.textContent = `ufa...`;
+                nuevoParrafo.classList.add('rojo');
+                document.getElementById("result").appendChild(nuevoParrafo);
+            }
         }
     });
 });
