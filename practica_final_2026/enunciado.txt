@@ -1,0 +1,13 @@
+1. Cree una página HTML que contenga dos articles. Uno con un rectángulo vacío y un párrafo en el
+interior.
+2. Los estilos deberán ser aplicados desde una hoja de estilos externa, al igual que el código
+javascript o jquery utilizado.
+3. Dar formato al encabezado a una columna, el contenido a dos columnas y el pie de página a una
+columna, utilizando para esto las propiedades que considere necesarias. Respete la alineación
+marcada de los textos.
+4. Al ingresar a la página, se deberá ver el texto Título del curso.
+5. Habrá un radio button que permitirá cambiar el titulo del curso, al hacer click en cada radio
+button.
+6. Habrá un combo (select) con tres colores, rojo, verde y amarillo, al cambiar el color en el select, se
+deberá cambiar el color del texto del primer article
+7. Habrá un radio button que permitirá cambiar el color de fondo, del primer article.
